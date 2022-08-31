@@ -804,11 +804,27 @@ details summary ~ * {
     margin-bottom: 10px;
 }
 
+@media all and (max-width: 500px) {
+    .results__text {
+        font-size: 11px;
+        max-width: 160px;
+        width: 100%;
+    }
+}
+
 .results__text_bold {
     font-weight: 600;
     font-size: 16px;
     line-height: 140%;
     font-family: 'Montserrat';
+}
+
+@media all and (max-width: 500px) {
+    .results__text_bold {
+        font-size: 10px;
+        max-width: 338px;
+        width: 100%;
+    }
 }
 
 .results__content {
