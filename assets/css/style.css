@@ -429,6 +429,14 @@ p, details, summary, td {
     box-sizing: border-box;
 }
 
+a, summary {
+    cursor: pointer;
+}
+
+a {
+    color: inherit;
+}
+
 h2 {
     font-family: 'Montserrat';
     font-weight: 600;
@@ -440,7 +448,7 @@ h2 {
     font-family: 'Montserrat';
     font-weight: 400;
     font-size: 10px;
-    line-height: 12px;
+    line-height: 14px;
 }
 
 .acts__table {
@@ -451,6 +459,10 @@ h2 {
 .acts__column {
     max-width: 200px;
     width: 25%;
+}
+
+.acts__summary__text {
+    line-height: 14px;
 }
 
 .acts__wrapper {
@@ -641,7 +653,17 @@ details summary ~ * {
 .tables__text {
     font-weight: 400;
     font-size: 14px;
+    font-weight: 500;
     line-height: 17px;
+    margin-right: 10px;
+    text-align: left;
+}
+
+@media all and (max-width: 460px) {
+    .tables__text {
+        font-size: 10px;
+        line-height: 12px;
+    }
 }
 
 .tables__text_bold {
@@ -697,6 +719,49 @@ details summary ~ * {
     text-align: center;
 }
 
+.tables__price__text {
+    font-weight: 500;
+    font-size: 8px;
+    line-height: 10px;
+}
+
+.tables__price__word {
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 12px;
+}
+
+.tables__price__cost {
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 10px;
+}
+
+.tables__price {
+    text-align: left;
+}
+
+.tables__wrapper {
+    max-width: 570px;
+    width: 100%;
+}
+
+.tables__content {
+    display: none;
+}
+
+@media all and (max-width: 730px) {
+    .tables__content {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -ms-flex-align: end;
+        align-items: flex-end;
+        margin: 9px 10px 0 0;
+    }
+}
+
 .results {
     display: -ms-flexbox;
     display: flex;
@@ -722,6 +787,7 @@ details summary ~ * {
 @media all and (max-width: 816px) {
     .results__wrap {
         margin-right: 0;
+        max-width: 100%;
     }
 }
 
@@ -744,6 +810,12 @@ details summary ~ * {
     margin: 25px 83px 133px 42px;
 }
 
+@media all and (max-width: 816px) {
+    .results__content {
+        margin: 15px;
+    }
+}
+
 .results__table {
     background: #0067B0;
     border-radius: 8px;
@@ -759,6 +831,12 @@ details summary ~ * {
     }
 }
 
+@media all and (max-width: 460px) {
+    .results__table {
+        height: 114px;
+    }
+}
+
 .results__table__wrap {
     max-width: 480px;
     width: 100%;
@@ -766,4 +844,16 @@ details summary ~ * {
 
 .results__span {
     margin-left: 20px;
+}
+
+.results__column__price {
+    text-align: left;
+}
+
+@media all and (max-width: 460px) {
+    .results__column__price {
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 15px;
+    }
 }
