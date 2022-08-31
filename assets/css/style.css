@@ -762,6 +762,10 @@ details summary ~ * {
     }
 }
 
+.box-shadow {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
 .results {
     display: -ms-flexbox;
     display: flex;
