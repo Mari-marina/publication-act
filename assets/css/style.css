@@ -684,7 +684,7 @@ details summary ~ * {
 }
 
 .tables__column_first {
-    width: 585px;
+    width: 55%;
     background: #0067B0;
     box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
@@ -692,15 +692,11 @@ details summary ~ * {
     color: #ffffff;
 }
 
-@media all and (max-width: 1090px) {
-    .tables__column_first {
-        width: 485px;
-    }
-}
+
 
 @media all and (max-width: 920px) {
     .tables__column_first {
-        width: 385px;
+        width: 50%;
     }
 }
 
