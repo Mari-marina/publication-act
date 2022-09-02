@@ -621,18 +621,6 @@ details[open] img {
 /*    100%  {max-height:2000px;}*/
 /*}*/
 
-summary:before {
-    content: '';
-    border-width: .4rem;
-    border-style: solid;
-    /*border-color: transparent transparent transparent #fff;*/
-    position: absolute;
-    top: 1.3rem;
-    left: 1rem;
-    transform: rotate(0);
-    transform-origin: .2rem 50%;
-    transition: .25s transform ease;
-}
 
 
 
