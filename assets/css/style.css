@@ -560,13 +560,6 @@ details > summary::-webkit-details-marker {
     display: none;
 }
 
-details[open] {
-    transition: 1s;
-    -webkit-transition: 1s;
-    -moz-transition: 1s;
-    -ms-transition: 1s;
-    -o-transition: 1s;
-}
 
 details[open] img {
     transform: rotate(180deg);
@@ -588,62 +581,44 @@ details[open] img {
     height: 24px;
 }
 
-details[open] summary ~ * {
-    animation: sweep .5s;
-    -webkit-animation: sweep .5s;
+/*.acts__details[open] summary ~ * {*/
+/*    animation: sweep .5s both;*/
+/*    -webkit-animation: sweep .5s both;*/
+/*}*/
+
+/*@-webkit-keyframes sweep {*/
+/*    0% {*/
+/*        opacity: 0;*/
+/*        margin-top: -20px;*/
+/*    }*/
+
+/*    100% {*/
+/*        opacity: 1;*/
+/*        margin-top: 0px;*/
+/*    }*/
+/*}*/
+
+/*@keyframes sweep {*/
+/*    0% {*/
+/*        opacity: 0;*/
+/*        margin-top: -20px;*/
+/*    }*/
+
+/*    100% {*/
+/*        opacity: 1;*/
+/*        margin-top: 0px;*/
+/*    }*/
+/*}*/
+
+details summary ~ p {
+    overflow: hidden;
 }
-
-@-webkit-keyframes sweep {
-    0% {
-        opacity: 0;
-        margin-top: -20px;
-    }
-
-    100% {
-        opacity: 1;
-        margin-top: 0px;
-    }
+details[open] summary ~ p {
+    animation: sweep 2s ease-in-out;
 }
-
 @keyframes sweep {
-    0% {
-        opacity: 0;
-        margin-top: -20px;
-    }
-
-    100% {
-        opacity: 1;
-        margin-top: 0px;
-    }
-}
-
-details summary ~ * {
-    animation: sweep2 .5s ease-in-out;
-    -webkit-animation: sweep2 .5s ease-in-out;
-}
-
-@-webkit-keyframes sweep2 {
-    0% {
-        opacity: 0;
-        margin-top: -10px;
-    }
-
-    100% {
-        opacity: 1;
-        margin-top: 0px;
-    }
-}
-
-@keyframes sweep2 {
-    0% {
-        opacity: 0;
-        margin-top: -10px;
-    }
-
-    100% {
-        opacity: 1;
-        margin-top: 0px;
-    }
+    0%    {max-height:0;}
+    100%  {max-height:2000px;}
 }
 
 .tables {
